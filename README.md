@@ -14,7 +14,7 @@ I care about clean problem formulations, reproducible pipelines, and writing cod
 **ML / Deep Learning:** PyTorch · scikit-learn · TorchScript · libtorch  
 **Optimization:** IBM CPLEX · MILP modeling  
 **Data & Analysis:** pandas · NumPy · Jupyter · matplotlib  
-**NLP / LLMs:** Hugging Face Transformers · llama.cpp · multi-agent architectures  
+**NLP / LLMs:** Hugging Face (transformers, peft, trl) · LoRA fine-tuning · bitsandbytes (QLoRA)  
 **Tools:** Git · Linux · CMake · pytest
 
 ---
@@ -25,8 +25,8 @@ I care about clean problem formulations, reproducible pipelines, and writing cod
 |---------|-------------|-------|
 | [**order-book-trend-predictor**](https://github.com/Gyldenn/order-book-trend-predictor) | GRU model that predicts short-term price direction from high-frequency order book data (Argentine bonds). Includes a full Python training pipeline and a C++ inference engine via libtorch. 63.8% directional accuracy on held-out data. | Python · PyTorch · C++ · libtorch |
 | [**mixed-delivery-route-optimization**](https://github.com/Gyldenn/mixed-delivery-route-optimization) | MILP formulation comparing a classical TSP against a hybrid truck + bicycle courier model. Solved to global optimality with CPLEX. Includes sensitivity analysis across constraint configurations and instance sizes. | Python · CPLEX · MILP |
-| [**Twitter-Bot-detection-homology**](https://github.com/Gyldenn/twitter-bot-detection-homology) | Implementation of a research paper that uses persistent homology (TDA) to detect bots on social networks. Extracts topological features from user interaction graphs and classifies accounts. | Python · TDA · Persistent Homology |
-| [**StoryWriter-Implementation**](https://github.com/Gyldenn/StoryWriter-Implementation) | Multi-agent system for automated long-form story generation. Six specialized LLM agents (seed, validator, sub-tasker, chapter weaver, writer, coordinator) collaborate iteratively using local models via llama.cpp. | Python · llama.cpp · Multi-Agent LLM |
+| [**Bot-detection-with-Topologic-Data-Analysis**](https://github.com/Gyldenn/Bot-detection-with-Topologic-Data-Analysis) | Implementation of a research paper that uses persistent homology (TDA) to detect bots on social networks. Extracts topological features from user interaction graphs and classifies accounts. | Python · TDA · Persistent Homology |
+| [**storywriter**](https://github.com/Gyldenn/storywriter) | Fine-tuning Mistral 7B with LoRA to generate Shakespearean prose, plus a RoBERTa classifier that scores output authenticity. Benchmark across 7 conditions showed prompt engineering gives +50pp and LoRA adds +10pp on top. | Python · PyTorch · Hugging Face · LoRA · bitsandbytes |
 | [**Competitive-programming**](https://github.com/Gyldenn/Competitive-programming) | 25+ solutions to UVa/CSES problems covering graph theory, dynamic programming, greedy algorithms, and advanced data structures. | C++ |
 
 ---
